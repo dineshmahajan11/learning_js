@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators in js </title>
+</head>
+<body>
+
+    <!-- Arithmetic Operators + - * / % ++ -- ** -->
+    <script>
+        var a=10;
+        var b=3;
+        var c=a*b;
+    
+        document.write(c);
+        document.write("<br>");
+    </script>
+
+    <!-- Assingment Operators = += -= ==  -->
+
+     <script>
+        var a=10;
+        var b=3;
+        var c=a+=b;
+        document.write(b);
+        document.write("<br>");
+     </script>
+
+     <!-- Comparism Operators == === <= >= < > != -->
+
+     <script>
+        var a=10;
+        var b=3;
+        if(a==b)
+        {
+            document.write("true");
+        }
+        else
+        {
+            document.write("false");
+        }
+        document.write("<br>");
+       
+     </script>
+
+     <!-- Logical Operators AND OR NOT (&& || !) -->
+
+     <script>
+        var age = 19;
+        if(age>=18 && age <=100)
+        {
+            document.write("Eligible to vote");
+        }
+        else
+        {
+            document.write("Not Eligible to Vote");
+        }
+
+        document.write("<br>");
+
+        var day="sunday";
+        if(day==="saturday" || day==="sunday")
+        {
+            document.write("Its Weekend")
+        }
+        else
+        {
+            document.write("Its Weekdays")
+        }
+        document.write("<br>");
+
+        var age =17;
+        var eligibility= (age>=18) ? "Eligible For Vote" : "Not Eligible For Vote";
+        document.write(eligibility);
+     </script>
+</body>
+</html>

@@ -6,6 +6,45 @@
     <title>Var Let const diff</title>
 </head>
 <body>
-    
+    <script>
+
+        //Global Scope
+
+        var x = 101;
+        let y = 102;
+        const z = 103;
+         
+        document.write("<br>");
+
+        //Function Scope 
+
+        function scopeExample(){
+            var x = 1; //Function Scope 
+            let y = 2;  //Block Level Scope 
+            const z = 3; //Block Level Scope 
+
+            if (true){
+                var x = 20; //value Reasigned (Value changes bcos function Scope)
+                let y = 20; // value doesnt changes 
+                const z = 30; // value doesnt changes
+                document.write(x); //10
+                document.write(y); //20
+                document.write(z); //30
+                document.write("<br>");
+            }
+
+            document.write(x); //10
+            document.write(y); //2
+            document.write(z); //3
+            document.write("<br>");
+        }
+        scopeExample()
+        {
+            document.write(x); //101
+            document.write(y); //102
+            document.write(z); //103
+            document.write("<br>");
+        }
+    </script>
 </body>
 </html>
