@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+
+        //Array modification
+
+        var a = ["Anand",28,"BE IT","Software Engineer"];
+        document.write(a + "<br>");
+
+        a[2]="BE CS";
+        document.write(a + "<br>");
+
+        delete a[1];
+        document.write(a + "<br>");
+    </script>
+    
+    <script>
+
+        //Sorting And Reverse
+        var  b = ["Shreya","Dinesh","Akanksha","Pratiksha","Akash","Mayuri"];
+        document.write(b + "<br>");
+        b.sort();
+        document.write(b + "<br>");
+        b.reverse();
+        document.write(b + "<br>");
+    </script>
+
+    <script>
+
+        //Push And Pop
+        var c = ["Shreya","Dinesh","Akanksha","Pratiksha","Akash","Mayuri"];
+        document.write(c + "<br>");
+        c.pop();
+        c.pop();
+        document.write(c + "<br>");
+        c.push("Kalpesh");
+        document.write(c + "<br>");
+
+    </script>
+
+    <script>
+
+        //Shift And Unshift
+        var c = ["Shreya","Dinesh","Akanksha","Pratiksha","Akash","Mayuri"];
+        document.write(c + "<br>");
+        c.shift();
+        c.shift();
+        document.write(c + "<br>");
+        c.unshift("Manali");
+        document.write(c + "<br>");
+
+    </script>
+<hr>
+    <script>
+        var a = ["Shreya","Dinesh","Akanksha"];
+        var b = ["Pratiksha","Akash","Mayuri"];
+        var c = ["Manali","Kalpesh"];
+
+        var d = a.concat(b,c);
+        document.write(d + "<br>");
+        var e = d.join("/");
+        document.write(d + "<br>");
+    </script>
+</body>
+</html>
